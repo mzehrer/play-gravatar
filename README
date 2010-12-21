@@ -1,0 +1,17 @@
+This is a trivial helper tag for the Play! framework [http://www.playframework.org] that lets you insert Gravatar [http://de.gravatar.com] images into your templates. Use it like this:
+
+#{gravatar email:'the@email.com', size:'48', default:'retro' /}
+
+The size and default attributes are completly optional, they can be defined as:
+
+size: An integer between 1 and 512 that defines the size of the Gravatar square (Default is 80)
+
+default: The default avatar image when no user defined avatar is available, possible values are:
+	
+	mm: (mystery-man) a simple, cartoon-style silhouetted outline of a person (does not vary by email hash)
+	identicon: a geometric pattern based on an email hash
+	monsterid: a generated 'monster' with different colors, faces, etc
+	wavatar: generated faces with differing features and backgrounds
+	retro: awesome generated, 8-bit arcade-style pixelated faces
+
+
